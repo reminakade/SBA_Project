@@ -1,3 +1,4 @@
 .DS_Store
 report.txt
-__pycache__/
+__pycache__/report.txt
+report.txt
