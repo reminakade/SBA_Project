@@ -8,7 +8,11 @@ def calculate_total(tasks):
 
 def write_report(filename, total):
     with open(filename, "w") as file:
+<<<<<<< HEAD
         file.write(f"Total time with overhead: {total * 1.20}")
+=======
+        file.write(f"Total time with overhead: {total * 1.15}")
+>>>>>>> feature-update
 tasks = read_tasks("tasks.txt")
 
 total = calculate_total(tasks)
