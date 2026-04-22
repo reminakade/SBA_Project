@@ -4,7 +4,7 @@ def read_tasks(filename):
         return [int(t.strip()) for t in tasks]
 
 def calculate_total(tasks):
-    return sum(tasks) * 0  # BUG!
+    return sum(tasks)  #fixed
 
 def write_report(filename, total):
     with open(filename, "w") as file:
