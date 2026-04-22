@@ -22,3 +22,12 @@ write_report("report.txt", total)
 print("Report created.")
 
 
+
+
+
+
+
+
+			
+
+
