@@ -4,7 +4,7 @@ def read_tasks(filename):
         return [int(t.strip()) for t in tasks]
 
 def calculate_total(tasks):
-    return sum(tasks)
+    return sum(tasks)  #fixed
 
 def write_report(filename, total):
     with open(filename, "w") as file:
@@ -20,5 +20,14 @@ total = calculate_total(tasks)
 write_report("report.txt", total)
 
 print("Report created.")
+
+
+
+
+
+
+
+
+			
 
 
