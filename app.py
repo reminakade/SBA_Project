@@ -6,18 +6,14 @@ def read_tasks(filename):
 def calculate_total(tasks):
     return sum(tasks)
 
-def add_overhead(total):
-    return total * 1.10
-
-def write_report(filename, total, final):
+def write_report(filename, total):
     with open(filename, "w") as file:
-        file.write(f"Total time: {total}\n")
-        file.write(f"With overhead: {final}")
+        file.write(f"Total time: {total}")
 
 tasks = read_tasks("tasks.txt")
-total = calculate_total(tasks)
-final = add_overhead(total)
 
-write_report("report.txt", total, final)
+total = calculate_total(tasks)
+
+write_report("report.txt", total)
 
 print("Report created.")
